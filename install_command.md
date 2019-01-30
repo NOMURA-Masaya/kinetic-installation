@@ -68,6 +68,12 @@ ROSのワークスペースの作成
 
 > $source ~/.bashrc
 
+---
+
+### [rosinstallの準備]
+
+> $sudo apt-get install python-rosinstall
+
 <br />
 <br />
 <br />

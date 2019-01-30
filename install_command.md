@@ -74,6 +74,18 @@ ROSのワークスペースの作成
 
 > $sudo apt-get install python-rosinstall
 
+### [マスターの登録]
+
+自分のPCを中心にROSを動かす場合
+> &echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+
+> $source ~/.bashrc
+
+他のPCを中心にROSを動かす場合(マスターを動かすマシンのIPアドレスを書く)
+> &echo "export ROS_MASTER_URI=http://192.168.X.XXX:11311" >> ~/.bashrc
+
+> $source ~/.bashrc
+
 <br />
 <br />
 <br />

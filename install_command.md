@@ -1,17 +1,21 @@
 # Ubuntu 16.04 / Mint 18 での ROS kinetic の導入  
 
+<br />
 
 2018/12/06  
 60190091 野村　雅也  
 
+<br />
 
 基本は下のサイトの手順で進めると良いです.(kineticより古いindigoなので注意)  
 http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html  
 
 ※このマニュアルはうろ覚えで書いたものです
 
+<br />
+
 ---
-  
+
 ### [ターミナルからkineticフルバージョンのインストール]
 
 ROSのダウンロード先の登録
@@ -54,19 +58,26 @@ ROSのワークスペースの作成
 
 > $catkin_init_workspace  
 
-メイク
+メイク **(以降,何度も使います)**
 > $cd ~/catkin_ws/
 
 > $catkin_make
 
 ワークスペースをインストール環境に登録する
-> $source devel/setup.bash
+> $echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
----
+> $source ~/.bashrc
 
-以下,トラブルシューティング
+<br />
+<br />
 
----
+---  
+  
+### 以下,トラブルシューティング  
+  
+---  
+
+<br />
 
 ### [catkin_makeで”Could not find SDL”のようなエラーが出た時]
 

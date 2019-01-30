@@ -14,23 +14,32 @@ http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html
   
 ### [ターミナルからkineticフルバージョンのインストール]
 
+ROSのダウンロード先の登録
 > $sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list' 
 
+公開鍵の取得
 > $wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add - 
 
+フルバージョンのROSのインストール
 > $sudo apt-get update 
 
-> $sudo apt-get install ros-kinetic-desktop-full
+> $sudo apt-get install ros-kinetic-desktop-full  
 
 ---
 
 ### [ROSの初期設定]
 
+パッケージの依存関係の初期化
 > $sudo rosdep init
 
 > $rosdep update
 
-> $echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+ターミナル用の環境変数の設定
+> $cd
+
+> $echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc  
+
+> $source ~/.bashrc
 
 ---
 
@@ -38,17 +47,22 @@ http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html
 
 > $sudo apt-get update && sudo apt-get install build-essential
 
+ROSのワークスペースの作成
 > $mkdir -p ~/catkin_ws/src
 
 > $cd catkin_ws/src
 
-> $catkin_init_workspace
+> $catkin_init_workspace  
 
-> $source /opt/ros/kinetic/setup.bash
-
-> $echo $ROS_PACKAGE_PATH
+メイク
+> $cd ~/catkin_ws/
 
 > $catkin_make
+
+ワークスペースをインストール環境に登録する
+> $source devel/setup.bash
+
+> $echo $ROS_PACKAGE_PATH
 
 ---
 

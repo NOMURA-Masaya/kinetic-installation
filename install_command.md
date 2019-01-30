@@ -8,6 +8,8 @@
 基本は下のサイトの手順で進めると良いです.(kineticより古いindigoなので注意)  
 http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html  
 
+※このマニュアルはうろ覚えで書いたものです
+
 ---
   
 ## [ターミナルからフルバージョンのインストール]

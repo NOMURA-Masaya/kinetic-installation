@@ -49,7 +49,7 @@ ROSのダウンロード先の登録
 
 ### [ワークスペースの準備]
 
-> $sudo apt-get update && sudo apt-get install build-essential
+> ~~$sudo apt-get update && sudo apt-get install build-essential~~
 
 ROSのワークスペースの作成
 > $mkdir -p ~/catkin_ws/src

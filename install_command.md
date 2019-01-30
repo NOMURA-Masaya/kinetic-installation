@@ -62,7 +62,9 @@ ROSのワークスペースの作成
 ワークスペースをインストール環境に登録する
 > $source devel/setup.bash
 
-> $echo $ROS_PACKAGE_PATH
+---
+
+以下,トラブルシューティング
 
 ---
 

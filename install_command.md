@@ -74,6 +74,8 @@ ROSのワークスペースの作成
 
 > $sudo apt-get install python-rosinstall
 
+
+
 ### [マスターの登録]
 
 自分のPCを中心にROSを動かす場合

@@ -73,7 +73,7 @@ http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html
 ## [tfツリーの時間がおかしい時(重要)]
 
 > &lt;node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" ns="/my_robo"&gt;  
->    **&lt;param name="use_tf_static" value="false"/&gt;**  
+    > **&lt;param name="use_tf_static" value="false"/&gt;**  
 > &lt;/node&gt;
 
 ※　launchファイルでのrobot_state_publisherの呼び出し時にパラメータ”use_tf_static”をfalseにする必要があります

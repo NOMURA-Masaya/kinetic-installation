@@ -4,3 +4,6 @@
 1. ubuntu 16.04のインストール
 2. manuals/2_ros_setup.mdを見ながらROSのセットアップ
 3. ROSでの基本的な開発
+
+
+![スマホ用](https://github.com/NOMURA-Masaya/kinetic-installation/QRcode.jpg "QRコード")

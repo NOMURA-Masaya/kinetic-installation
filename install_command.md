@@ -58,15 +58,15 @@ ROSのワークスペースの作成
 
 > $catkin_init_workspace  
 
-メイク **(以降,何度も使います)**
-> $cd ~/catkin_ws/
-
-> $catkin_make
-
 ワークスペースをインストール環境に登録する
 > $echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 > $source ~/.bashrc
+
+メイク **(ソースコードを変更するたびに実行する)**
+> $cd ~/catkin_ws/
+
+> $catkin_make
 
 ---
 

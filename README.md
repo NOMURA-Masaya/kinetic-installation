@@ -2,5 +2,5 @@
 ---
 
 1. ubuntu 16.04のインストール
-2. install_command.mdによるROSのインストール
+2. install_command.mdを見ながらROSのセットアップ
 3. ROSでの基本的な開発

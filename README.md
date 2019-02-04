@@ -5,5 +5,4 @@
 2. manuals/2_ros_setup.mdを見ながらROSのセットアップ
 3. ROSでの基本的な開発
 
-
-![スマホ用](https://github.com/NOMURA-Masaya/kinetic-installation/QRcode.jpg "QRコード")
+![qrcode](https://user-images.githubusercontent.com/28037791/52205500-9b893780-28ba-11e9-926d-73021cd017c0.jpg)

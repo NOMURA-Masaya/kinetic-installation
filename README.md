@@ -5,4 +5,4 @@
 2. manuals/2_ros_setup.mdを見ながらROSのセットアップ
 3. ROSでの基本的な開発
 
-![qrcode](https://user-images.githubusercontent.com/28037791/52205500-9b893780-28ba-11e9-926d-73021cd017c0.jpg)
+![qrcode](https://user-images.githubusercontent.com/28037791/52205688-3a159880-28bb-11e9-9d2a-d8d857f6d4c6.jpg)

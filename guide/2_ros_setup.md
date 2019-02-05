@@ -79,7 +79,7 @@ ROSのワークスペースの作成
 ### [マスターの登録]
 
 自分のPCを中心にROSを動かす場合
-> &echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+> $echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 
 > $source ~/.bashrc
 

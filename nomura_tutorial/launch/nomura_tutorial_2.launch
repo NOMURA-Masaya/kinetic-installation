@@ -1,0 +1,16 @@
+<launch>
+	<master auto="start"/>
+
+	<node pkg="turtlesim" type="turtlesim_node" respawn="false" name="turtlesim" output="screen"/>
+
+	<node pkg="turtlesim" type="turtle_teleop_key" respawn="false" name="turtle_teleop_key" output="screen">
+		<remap from="/turtle1/cmd_vel" to="/nomura_tutorial/cmd_vel"/>
+	</node>
+
+	<node pkg="nomura_tutorial" type="nomura_tutorial" respawn="false" name="nomura_tutorial" output="screen">
+		<rosparam file="$(find nomura_tutorial)/cfg/config.yaml" command="load" />
+	</node>
+
+	<node pkg="rqt_graph" type="rqt_graph" respawn="false" name="rqt_grap" output="screen"/>
+
+</launch>

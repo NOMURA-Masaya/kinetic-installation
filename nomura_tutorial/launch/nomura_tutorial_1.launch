@@ -1,0 +1,10 @@
+<launch>
+	<master auto="start"/>
+
+	<node pkg="turtlesim" type="turtlesim_node" respawn="false" name="turtlesim" output="log"/>
+
+	<node pkg="turtlesim" type="turtle_teleop_key" respawn="false" name="turtle_teleop_key" output="screen"/>
+
+	<node pkg="rqt_graph" type="rqt_graph" respawn="false" name="rqt_grap" output="screen"/>
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+	<master auto="start"/>
+	<node pkg="nomura_tutorial" type="bonus_talker" respawn="false" name="bonus_talker" output="screen" />
+	<node pkg="nomura_tutorial" type="bonus_listener" respawn="false" name="bonus_listener" output="screen" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nomura_tutorial)/cfg/example.rviz" required="true"/>
+</launch>

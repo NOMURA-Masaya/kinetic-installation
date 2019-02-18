@@ -1,0 +1,3 @@
+timeout: 1.0
+vel_linear_x: 3.0
+vel_angular_z: 3.0

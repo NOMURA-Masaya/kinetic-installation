@@ -87,8 +87,32 @@ ROSのワークスペースの作成
 
 ---
 
-### [コントローラをインストールしておく]
+### [Gazebo 7.14 ~ を利用する準備]
 
+Gazeboのバージョンアップ（7.14以降になると成功）
+> $sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+
+> $cd /tmp/
+
+> $wget http://packages.osrfoundation.org/gazebo.key
+
+> $sudo apt-key add gazebo.key
+
+> $sudo apt-get update
+
+> $sudo apt-get install gazebo7
+
+> $sudo apt-get update
+
+> $sudo apt-get upgrade
+
+> $sudo reboot
+
+バージョン確認
+> $gazebo -v
+
+GazeboとROSを連携するプラグインをインストール
+> $sudo apt-get install -y ros-kinetic-gazebo-ros-control
 > $sudo apt-get install -y ros-kinetic-ros-control ros-kinetic-ros-controllers
 
 
@@ -123,9 +147,19 @@ ROSのワークスペースの作成
 
 > $rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y --os=ubuntu:xenial
 
-> ($sudo apt-get update && sudo apt-get install libopenni2-dev)
+> ~~$sudo apt-get update && sudo apt-get install libopenni2-dev~~
 
-※　rosdep はcatkin_wsで実行します
+※　rosdep は~/catkin_wsで実行します
+
+---
+
+### [tfツリーの時間がおかしい時(重要)]
+
+> &lt;node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" ns="/my_robo"&gt;  
+> &nbsp;&nbsp;&nbsp;&nbsp;**&lt;param name="use_tf_static" value="false"/&gt;**  
+> &lt;/node&gt;
+
+※　launchファイルでのrobot_state_publisherの呼び出し時にパラメータ”use_tf_static”をfalseにする必要があります
 
 ---
 
@@ -141,10 +175,3 @@ ROSのワークスペースの作成
 
 ---
 
-### [tfツリーの時間がおかしい時(重要)]
-
-> &lt;node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" ns="/my_robo"&gt;  
-> &nbsp;&nbsp;&nbsp;&nbsp;**&lt;param name="use_tf_static" value="false"/&gt;**  
-> &lt;/node&gt;
-
-※　launchファイルでのrobot_state_publisherの呼び出し時にパラメータ”use_tf_static”をfalseにする必要があります

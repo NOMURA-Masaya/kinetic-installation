@@ -103,6 +103,14 @@ ROSのワークスペースの作成
 
 ---
 
+### [catkin_makeで.cfg関連のエラーが出た時]
+
+> &cd catkin_ws/src
+
+> &sudo find ./ -name "*.cfg" | xargs chmod 777
+
+---
+
 ### [依存している関連パッケージをインストールしたい時(tis_cameraには適用不可)]
 
 > $rosdep update

@@ -7,9 +7,6 @@
 
 <br />
 
-基本は下のサイトの手順で進めると良いです.(kineticより古いindigoなので注意)  
-http://bril-tech.blogspot.com/2016/10/ros1-robot-operating-system.html  
-
 ※このマニュアルはうろ覚えで書いたものです
 
 <br />
@@ -88,9 +85,18 @@ ROSのワークスペースの作成
 
 > $source ~/.bashrc
 
+---
+
+### [コントローラをインストールしておく]
+
+> $sudo apt-get install -y ros-kinetic-ros-control ros-kinetic-ros-controllers
+
+
 <br />
 <br />
 <br />
+
+
 
   
 ### 以下,トラブルシューティング  

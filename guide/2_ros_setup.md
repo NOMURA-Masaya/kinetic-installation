@@ -81,7 +81,7 @@ ROSのワークスペースの作成
 > $source ~/.bashrc
 
 他のPCを中心にROSを動かす場合(マスターを動かすマシンのIPアドレスを書く)
-> &echo "export ROS_MASTER_URI=http://192.168.X.XXX:11311" >> ~/.bashrc
+> echo "export ROS_MASTER_URI=http://192.168.X.XXX:11311" >> ~/.bashrc
 
 > $source ~/.bashrc
 
@@ -129,15 +129,15 @@ GazeboとROSを連携するプラグインをインストール
 
 ### [catkin_makeで”Could not find SDL”のようなエラーが出た時]
 
-> &sudo apt-get install libsdl-dev
+> $sudo apt-get install libsdl-dev
 
 ---
 
 ### [catkin_makeで.cfg関連のエラーが出た時]
 
-> &cd catkin_ws/src
+> $cd catkin_ws/src
 
-> &sudo find ./ -name "*.cfg" | xargs chmod 777
+> $sudo find ./ -name "*.cfg" | xargs chmod 777
 
 ---
 

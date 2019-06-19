@@ -81,7 +81,7 @@ ROSのワークスペースの作成
 > $source ~/.bashrc
 
 他のPCを中心にROSを動かす場合(マスターを動かすマシンのIPアドレスを書く)
-> echo "export ROS_MASTER_URI=http://192.168.X.XXX:11311" >> ~/.bashrc
+> $echo "export ROS_MASTER_URI=http://192.168.X.XXX:11311" >> ~/.bashrc
 
 > $source ~/.bashrc
 
